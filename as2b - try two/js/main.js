@@ -42,8 +42,25 @@ initializeCarousel('nextButton9', '.row-four-3', 'carousel-item');
 initializeCarousel('nextButton10', '.row-four-3', 'carousel-item');
 initializeCarousel('nextButton11', '.row-four-3', 'carousel-item');
 initializeCarousel('nextButton12', '.row-four-3', 'carousel-item');
+	
+	
+// Custom cursor
+	$(document).ready(function(){
+ var cursor = $('.cursor');
+
+ $(window).mousemove(function(e) {
+        cursor.css({
+            top: e.clientY - cursor.height() / 2,
+            left: e.clientX - cursor.width() / 2
+        });
+    });
+});
+
+
 
 });
+
+
 
 	
 	
