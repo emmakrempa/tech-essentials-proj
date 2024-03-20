@@ -355,7 +355,7 @@ img.row-one {
    	height: 20px;
    	pointer-events: none;
 	scale: 175%;
-   	z-index: 999;
+   	z-index: 5000;
    	transition: transform 0.2s;
 }
 
