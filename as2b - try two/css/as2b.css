@@ -336,10 +336,73 @@ img.row-one {
    transition: transform 0.2s;
 }
 
-html,
-*{
-cursor: none;
+
+
+/* Community page style */
+
+.communitytype{
+	margin: 40px;
+	padding-bottom: 20px;
+	display: grid;
+  	grid-template-columns: 3fr 6fr;
+	grid-row-gap: 0px;
+	align-items: center;
 }
 
+.post{
+	margin-left: 20px;
+	padding-bottom: ;
+	
+	
+}
+.posttitle{
+	font-size: 26px;
+	margin-left: 20px;
+	padding-bottom: 20px;
+	font-family: 'Barriecito';
+	
+}
 
+.communityimg1{
+	max-width:400px ;
+	max-height: 800px;
+	padding-bottom:  20px;
+	grid-column: 1/3;
+}
 
+.postdesc{
+	margin: 40px;
+	padding-bottom: 10px;
+	}
+
+.joinbutton{
+	background-color: #D9352C;
+	max-width: 60px;
+	max-height:40px ;
+	margin: 40px;
+	padding: 20px;
+	border-radius: 30px;	
+	text-align: center
+}
+
+/* Community carrousel page style */
+
+.communitycarrousel,.joinbutton{
+align-content: center;
+	
+}
+
+.desc1c, .text1c{
+text-align: left;
+	
+}
+
+.text1c,{
+	font-family: 'Barriecito';
+	
+}
+
+html
+{
+cursor:none;
+}
