@@ -109,7 +109,7 @@ nav a.active {
 
 /* Setting up the footer. */
 
-.footer {
+footer {
     left: 0;
     bottom: 0;
     width: 100%;
@@ -124,7 +124,7 @@ nav a.active {
 	align-items: center;
 }
 
-.footer a {
+footer a {
 	color: #FFFFFF;
     text-decoration: none;
     margin: 0 10px;
