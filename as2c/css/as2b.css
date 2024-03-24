@@ -39,7 +39,6 @@ body {
 nav a {
     color: white;
     font-size: 15px;
-    font-weight: normal;
 	text-decoration: none;
 	padding-left: 30px;
 }
@@ -64,43 +63,6 @@ nav a.active {
 
 .logo-image {
 	height: 16px;
-}
-
-/* Dropdown container */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown button */
-.dropbtn {
-    color: white;
-    text-decoration: none;
-}
-
-/* Dropdown content */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    min-width: 100px;
-    z-index: 3000;
-	padding-top: 12px;
-}
-
-.dropdown-content a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-	background-color: #a098b6ff;
-	color: black;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 /* Setting up the footer. */
