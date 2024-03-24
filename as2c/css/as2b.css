@@ -40,7 +40,7 @@ nav a {
     color: white;
     font-size: 15px;
 	text-decoration: none;
-	padding-left: 30px;
+	padding-left: 20px;
 }
 
 nav a:hover {
@@ -724,7 +724,31 @@ img.row-one-3 {
 	width: 14px;
 	height: 14px;
 	margin-left: 50px;
-	margin-right: 10px;
+	margin-right: 5px;
+	margin-bottom: -2px;
+}
+
+.row-oneb-3-b {
+	grid-column: 1/2;
+  	grid-row: 1;
+	margin-top: 50px;
+	display: flex;
+  	justify-content: left;
+	margin-top: 80px;
+	z-index: 30000;
+	display: none;
+}
+
+.row-oneb-3-b a {
+	text-decoration: none
+}
+
+.row-oneb-3-b img {
+	width: 20px;
+	height: 20px;
+	margin-left: 50px;
+	margin-right: 5px;
+	margin-bottom: -2px;
 }
 
 .row-two-3 {
@@ -808,7 +832,31 @@ img.row-one-3 {
 	width: 14px;
 	height: 14px;
 	margin-left: 50px;
-	margin-right: 10px;
+	margin-right: 5px;
+	margin-bottom: -2px;
+}
+
+.row-oneb-4-b {
+	grid-column: 1/6;
+  	grid-row: 1;
+	margin-top: 50px;
+	display: flex;
+  	justify-content: left;
+	margin-top: 80px;
+	z-index: 10000;
+	display: none;
+}
+
+.row-oneb-4-b a {
+	text-decoration: none
+}
+
+.row-oneb-4-b img{
+	width: 20px;
+	height: 20px;
+	margin-left: 50px;
+	margin-right: 5px;
+	margin-bottom: -2px;
 }
 
 .row-two-4 {
@@ -857,16 +905,14 @@ cursor: none;
 
 .post{
 	margin-left: 20px;
-	padding-bottom: ;
-	
-	
+	padding-bottom: ;	
 }
+
 .posttitle{
 	font-size: 26px;
 	margin-left: 20px;
 	padding-bottom: 20px;
 	font-family: 'Barriecito';
-	
 }
 
 .communityimg1{
@@ -904,9 +950,8 @@ cursor: none;
 .post{
 	margin-left: 20px;
 	padding-bottom: ;
-	
-	
 }
+
 .posttitle{
 	font-size: 26px;
 	margin-left: 20px;
@@ -972,6 +1017,22 @@ text-align: left;
 	
 	#nextButton13 {
 		display: block;
+	}
+	
+	.row-oneb-3-b {
+		display: block;
+	}
+	
+	.row-oneb-3 {
+		display: none;
+	}
+	
+	.row-oneb-4-b {
+		display: block;
+	}
+	
+	.row-oneb-4 {
+		display: none;
 	}
 	
 }
