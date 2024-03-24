@@ -197,6 +197,10 @@ img.footer-column1 {
 	max-height: 16px;
 }
 
+#nextButton13 {
+	display: none;
+}
+
 /* Fonts */
 
 .text1 {
@@ -405,7 +409,7 @@ img.row-one {
   	grid-row: 6;
 }
 
-/* Grid layout for home page. */
+/* Grid layout for read, watch, and listen subpages. */
 
 .grid-system-2 {
 	display: grid;
@@ -445,8 +449,8 @@ img.row-one-2 {
 }
 
 img.row-four-2a {
-	margin-left: 160px;
-	width: 70%;
+	margin-left: 40px;
+	width: 90%;
 	align-content: center;
 }
 
@@ -461,7 +465,7 @@ img.row-four-2a {
     flex-direction: column;
     align-items: center;
 	justify-content: center;
-	margin-right: 160px;
+	margin-right: 40px;
 }
 
 .row-five-2a {
@@ -470,8 +474,8 @@ img.row-four-2a {
 }
 
 img.row-five-2a {
-	margin-left: 160px;
-	width: 70%;
+	margin-left: 40px;
+	width: 90%;
 	align-content: center;
 }
 
@@ -486,7 +490,7 @@ img.row-five-2a {
     flex-direction: column;
     align-items: center;
 	justify-content: center;
-	margin-right: 160px;
+	margin-right: 40px;
 }
 
 .row-six-2a {
@@ -495,8 +499,8 @@ img.row-five-2a {
 }
 
 img.row-six-2a {
-	margin-left: 160px;
-	width: 70%;
+	margin-left: 40px;
+	width: 90%;
 	align-content: center;
 }
 
@@ -512,7 +516,7 @@ img.row-six-2a {
     flex-direction: column;
     align-items: center;
 	justify-content: center;
-	margin-right: 160px;
+	margin-right: 40px;
 }
 
 .row-seven-2a {
@@ -521,8 +525,8 @@ img.row-six-2a {
 }
 
 img.row-seven-2a {
-	margin-left: 160px;
-	width: 70%;
+	margin-left: 40px;
+	width: 90%;
 	align-content: center;
 }
 
@@ -538,7 +542,7 @@ img.row-seven-2a {
     flex-direction: column;
     align-items: center;
 	justify-content: center;
-	margin-right: 160px;
+	margin-right: 40px;
 }
 
 .row-eight-2a {
@@ -547,8 +551,8 @@ img.row-seven-2a {
 }
 
 img.row-eight-2a {
-	margin-left: 160px;
-	width: 70%;
+	margin-left: 40px;
+	width: 90%;
 	align-content: center;
 }
 
@@ -564,7 +568,7 @@ img.row-eight-2a {
     flex-direction: column;
     align-items: center;
 	justify-content: center;
-	margin-right: 160px;
+	margin-right: 40px;
 }
 
 .row-nine-2a {
@@ -573,8 +577,8 @@ img.row-eight-2a {
 }
 
 img.row-nine-2a {
-	margin-left: 160px;
-	width: 70%;
+	margin-left: 40px;
+	width: 90%;
 	align-content: center;
 }
 
@@ -590,7 +594,7 @@ img.row-nine-2a {
     flex-direction: column;
     align-items: center;
 	justify-content: center;
-	margin-right: 160px;
+	margin-right: 40px;
 }
 
 .row-ten-2a {
@@ -599,8 +603,8 @@ img.row-nine-2a {
 }
 
 img.row-ten-2a {
-	margin-left: 160px;
-	width: 70%;
+	margin-left: 40px;
+	width: 90%;
 	align-content: center;
 }
 
@@ -616,7 +620,7 @@ img.row-ten-2a {
     flex-direction: column;
     align-items: center;
 	justify-content: center;
-	margin-right: 160px;
+	margin-right: 40px;
 }
 
 .row-eleven-2a {
@@ -625,8 +629,8 @@ img.row-ten-2a {
 }
 
 img.row-eleven-2a {
-	margin-left: 160px;
-	width: 70%;
+	margin-left: 40px;
+	width: 90%;
 	align-content: center;
 }
 
@@ -642,7 +646,7 @@ img.row-eleven-2a {
     flex-direction: column;
     align-items: center;
 	justify-content: center;
-	margin-right: 160px;
+	margin-right: 40px;
 }
 
 .row-twelve-2a {
@@ -651,8 +655,8 @@ img.row-eleven-2a {
 }
 
 img.row-twelve-2a {
-	margin-left: 160px;
-	width: 70%;
+	margin-left: 40px;
+	width: 90%;
 	align-content: center;
 }
 
@@ -668,7 +672,7 @@ img.row-twelve-2a {
     flex-direction: column;
     align-items: center;
 	justify-content: center;
-	margin-right: 160px;
+	margin-right: 40px;
 }
 
 .row-thirteen-2a {
@@ -677,8 +681,8 @@ img.row-twelve-2a {
 }
 
 img.row-thirteen-2a {
-	margin-left: 160px;
-	width: 70%;
+	margin-left: 40px;
+	width: 90%;
 	align-content: center;
 }
 
@@ -694,7 +698,7 @@ img.row-thirteen-2a {
     flex-direction: column;
     align-items: center;
 	justify-content: center;
-	margin-right: 160px;
+	margin-right: 40px;
 }
 
 .row-fourteen {
@@ -965,5 +969,25 @@ text-align: left;
 
 
 @media (max-width:760px) {
+	
+	.carousel-item {
+  		flex: 0 0 calc(100%);
+  		max-width: calc(100%);
+		padding-right: 40px;
+	}
+	
+	.carousel-item2 {
+  		flex: 0 0 calc(100% / 3);
+  		max-width: calc(100% / 3);
+	}
+	
+	.carousel-item2-black {
+  		flex: 0 0 calc(100% / 3);
+  		max-width: calc(100% / 3);
+	}
+	
+	#nextButton13 {
+		display: block;
+	}
 	
 }
