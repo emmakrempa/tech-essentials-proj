@@ -26,7 +26,7 @@ body {
 	position: fixed;
 	top: 0;
 	justify-content: space-between;
-	z-index: 3000;
+	z-index: 11000;
 }
 
 #topnav ul li { 
@@ -755,26 +755,43 @@ img.row-one-3 {
 	margin-bottom: 50px;
 }
 
-
 .grid-system-4 {
 	display: grid;
-  	grid-template-columns: 33fr 33fr 33fr;
+  	grid-template-columns: 14fr 24fr 24fr 24fr 14fr;
   	column-gap: 50px;
 	grid-row-gap: 70px;
 }
 
-.row-one-4 {
-	grid-column: 2/3;
+.iframe-wrapper {
+	grid-column: 2/5;
   	grid-row: 1;
+	width: 100%;
+}
+
+.row-one-4 {
 	margin-top: 80px;
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
 	z-index: 10000;
+	position: relative;
+  	overflow: hidden;
+  	width: 100%;
+  	padding-top: 56.25%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-one-4 iframe {
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	bottom: 0;
+  	right: 0;
+  	width: 100%;
+  	height: 100%;
 }
 
 .row-oneb-4 {
-	grid-column: 1/3;
+	grid-column: 1/6;
   	grid-row: 1;
 	margin-top: 50px;
 	display: flex;
@@ -795,7 +812,7 @@ img.row-one-3 {
 }
 
 .row-two-4 {
-	grid-column: 1/4;
+	grid-column: 1/6;
   	grid-row: 2;
 	display: flex;
   	justify-content: center;
@@ -804,7 +821,7 @@ img.row-one-3 {
 }
 
 .row-three-4 {
-	grid-column: 1/4;
+	grid-column: 1/6;
   	grid-row: 4;
 	margin-bottom: 50px;
 	margin-top: -60px;
