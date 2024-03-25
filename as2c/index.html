@@ -5,7 +5,7 @@
 <head>
 		
 	<meta charset="UTF8" />
-	<link rel="icon" type="image/png" href="img/favicon.png" />
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
 	<title>Campfire</title>
 	<link rel="stylesheet" type="text/css" href="css/as2b.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya Sans">
@@ -27,14 +27,9 @@
    		</ul>
 		
     	<ul class="topnav-right">
-    		<li class="dropdown">
-        		<a class="dropbtn">STORIES</a>
-            		<div class="dropdown-content">
-                		<a href="read.html">READ</a>
-                		<a href="watch.html">WATCH</a>
-                		<a href="listen.html">LISTEN</a>
-            		</div>
-        	</li>
+            <li><a href="read.html">READ</a></li>
+            <li><a href="watch.html">WATCH</a></li>
+            <li><a href="listen.html">LISTEN</a></li>
         	<li><a href="communities.html">COMMUNITIES</a></li>
         	<li><a href="account.html">ACCOUNT</a></li>
     	</ul>
@@ -43,19 +38,19 @@
 	
 	<!-- This section is where our grid starts. -->
 	
-	<div class="grid-system">
+	<main class="grid-system">
 		
 		<!-- Homepage Image -->
 		
-		<div class="row-one">
+		<section class="row-one">
 			
 			<img src="img/campfire.png" class="row-one"/>
 		
-		</div>
+		</section>
 		
 		<!-- Homepage Carousel - Recommended -->
 		
-		<div class="row-two">
+		<section class="row-two">
 			
 			<div class="text1">Recommended For You</div>
 			
@@ -63,7 +58,7 @@
 			
 				<div class="carousel">
   					<div class="carousel-inner">
-    					<div class="carousel-item"><img src="img/recommended1.png"/>A New Prometheus</div>
+    					<div class="carousel-item"><a href="a-new-prometheus.html"><img src="img/recommended1.png"/>A New Prometheus</a></div>
     					<div class="carousel-item"><img src="img/recommended2.png"/>How Exactly Do I Get Out Of Here?</div>
 						<div class="carousel-item"><img src="img/recommended3.png"/>Hellfire - A Dragon's Lifestory</div>
 						<div class="carousel-item"><img src="img/recommended4.png"/>A Path to Amazonia</div>
@@ -76,11 +71,11 @@
 				
 			</div>
 		
-		</div>
+		</section>
 		
 		<!-- Homepage Carousel - Dive Back In -->
 		
-		<div class="row-three">
+		<section class="row-three">
 			
 			<div class="text1">Dive Back In</div>
 			
@@ -88,14 +83,14 @@
 			
 				<div class="carousel">
   					<div class="carousel-inner">
-    					<div class="carousel-item2"><img src="img/dive1.png"/>A New Prometheus</div>
-    					<div class="carousel-item2"><img src="img/dive2.png"/>How Exactly Do I Get Out Of Here?</div>
-						<div class="carousel-item2"><img src="img/dive3.png"/>Hellfire - A Dragon's Lifestory</div>
-						<div class="carousel-item2"><img src="img/dive4.png"/>A Path to Amazonia</div>
-    					<div class="carousel-item2"><img src="img/dive5.png"/>Darkfire</div>
-    					<div class="carousel-item2"><img src="img/dive6.png"/>The Place Beyond The Trees</div>
-						<div class="carousel-item2"><img src="img/dive7.png"/>Darkfire</div>
-						<div class="carousel-item2"><img src="img/dive8.png"/>Darkfire</div>
+    					<div class="carousel-item2"><a href="the-operator.html"><img src="img/dive1.png"/>The Operator</a></div>
+    					<div class="carousel-item2"><img src="img/dive2.png"/>The Dark Entity</div>
+						<div class="carousel-item2"><img src="img/dive3.png"/>Gray Faces</div>
+						<div class="carousel-item2"><img src="img/dive4.png"/>A Question of Sanity</div>
+    					<div class="carousel-item2"><img src="img/dive5.png"/>Of Fire and Heartbreak</div>
+    					<div class="carousel-item2"><img src="img/dive6.png"/>Pasture Status</div>
+						<div class="carousel-item2"><img src="img/dive7.png"/>Vertigo</div>
+						<div class="carousel-item2"><img src="img/dive8.png"/>Curing Brain</div>
   					</div>
 				</div>
 				
@@ -103,29 +98,36 @@
 				
 			</div>
 		
-		</div>
+		</section>
 		
 		<!-- Homepage Carousel - My Communities -->
 		
-		<div class="row-four">
+		<section class="row-four">
 			
 			<div class="text1">My Communities</div>
 			
+			<div class="carousel-container">
+			
 				<div class="carousel">
   					<div class="carousel-inner">
-    					<div class="carousel-item2"><img src="img/community1.png"/></div>
+    					<div class="carousel-item2"><a href="fantasy.html"><img src="img/community1.png"/></a></div>
     					<div class="carousel-item2"><img src="img/community2.png"/></div>
 						<div class="carousel-item2"><img src="img/community3.png"/></div>
 						<div class="carousel-item2"><img src="img/community4.png"/></div>
 						<div class="carousel-item2"><img src="img/community5.png"/></div>
   					</div>
+					
 				</div>
+					
+					<img class="carousel-next-icon" src="img/arrow.png" id="nextButton13">
+				
+			</div>
 		
-		</div>
+		</section>
 	
 		<!-- Homepage Carousel - Featured -->
 		
-		<div class="row-five">
+		<section class="row-five">
 			
 			<div class="text1">Featured Stories</div>
 			
@@ -133,7 +135,7 @@
 			
 				<div class="carousel">
   					<div class="carousel-inner">
-    					<div class="carousel-item"><img src="img/featured1.png"/>Anne Of The Greendaws</div>
+    					<div class="carousel-item"><a href="anne-of-the-greendaws.html"><img src="img/featured1.png"/>Anne Of The Greendaws</a></div>
     					<div class="carousel-item"><img src="img/featured2.png"/>The Ilbril</div>
 						<div class="carousel-item active"><img src="img/featured3.png"/>The Blue Droplets</div>
 						<div class="carousel-item active"><img src="img/featured4.png"/>Tragopolis</div>
@@ -146,11 +148,11 @@
 				
 			</div>
 		
-		</div>
+		</section>
 		
 		<!-- Homepage Carousel - Featured -->
 		
-		<div class="row-six">
+		<section class="row-six">
 			
 			<div class="text1">Editor's Picks</div>
 			
@@ -158,11 +160,11 @@
 			
 				<div class="carousel">
   					<div class="carousel-inner">
-    					<div class="carousel-item"><img src="img/pick1.png"/>Anne Of The Greendaws</div>
-    					<div class="carousel-item"><img src="img/pick2.png"/>The Ilbril</div>
-						<div class="carousel-item active"><img src="img/pick3.png"/>The Blue Droplets</div>
-						<div class="carousel-item active"><img src="img/pick4.png"/>Tragopolis</div>
-    					<div class="carousel-item"><img src="img/pick5.png"/>The Mayhem City</div>
+    					<div class="carousel-item"><a href="sand-and-serpent.html"><img src="img/pick1.png"/>Sand and Serpent</a></div>
+    					<div class="carousel-item"><img src="img/pick2.png"/>Cicada Summer</div>
+						<div class="carousel-item active"><img src="img/pick3.png"/>Caterpillar Moon</div>
+						<div class="carousel-item active"><img src="img/pick4.png"/>Mountain Of Silver</div>
+    					<div class="carousel-item"><img src="img/pick5.png"/>Chronicles of Vassi</div>
     					<div class="carousel-item"><img src="img/pick6.png"/>The Return To Malneant</div>
   					</div>
 				</div>
@@ -171,11 +173,11 @@
 				
 			</div>
 		
-		</div>
+		</section>
 			
-	</div>
+	</main>
 	
-	<div class="footer">
+	<footer>
 		
 		<img src="img/logo.png" class="footer-column1">
 		
@@ -203,7 +205,7 @@
 	
 		<div class="footer-bottom">© 2024 by Tech Essentials Team 2</div>
 			
-	</div>
+	</footer>
 		
 	<div class="cursor">&#9733;</div>
 	
