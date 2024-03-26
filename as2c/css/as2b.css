@@ -16,7 +16,6 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
 /* CSS for the full navigation bar.*/
 
 #topnav {
@@ -257,13 +256,14 @@ img.footer-column1 {
 }
 
 .carousel-item img:hover {
-  	transform: scale(1.07);
+	transform: scale(1.07);
 }
 
 .carousel-item img {
   	width: 100%;
   	height: auto;
 	padding-bottom: 20px;
+	
 }
 
 .carousel-item2 {
@@ -904,7 +904,6 @@ cursor: none;
 }
 
 .post{
-<<<<<<< HEAD
 	margin-left: 20px;
 }
 
@@ -949,11 +948,6 @@ cursor: none;
 
 .post{
 	margin-left: 20px;
-=======
-	margin-left: ;
-	padding-bottom: ;
-	opacity: 20%;
->>>>>>> 5f6ad290fbffc3c8dbd1dbd5b4b5d56251fe4a7c
 }
 
 .posttitle{
@@ -1017,18 +1011,13 @@ cursor: none;
 	width: 50px;
 	height: 50px;
 	text-align: center;
-	linge-hewight: 64px;
+	line-height: 64px;
 	font-size: 70px;
 }
 
 #popup #closepopup:hover {
 	cursor: pointer;
 }
- 
-	font-family: 'Barriecito';
-}
-
-
 @media (max-width:760px) {
 	
 	.carousel-item {

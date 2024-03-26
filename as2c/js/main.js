@@ -30,6 +30,7 @@ function initializeCarousel(buttonId, carouselSelector, itemClass) {
     }
 }
 
+
 initializeCarousel('nextButton1', '.row-two', 'carousel-item');
 initializeCarousel('nextButton2', '.row-three', 'carousel-item2');
 initializeCarousel('nextButton3', '.row-five', 'carousel-item');
