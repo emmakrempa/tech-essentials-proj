@@ -56,9 +56,25 @@ initializeCarousel('nextButton12', '.row-four-3', 'carousel-item');
     });
 });
 
+	
+// Community popup
+$(document).ready(function(){
+$("#popup").hide()});
 
-
+$(".readbutton").on('click', function() {
+$("#popup").show()
 });
+
+$("#closepopup").on('click', function() {
+$("#popup").hide()
+});
+  
+	//
+//$("#closepopup").on('click', function(){
+ // $("#popup").hide()
+});//
+  
+
 
 
 
