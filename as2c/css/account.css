@@ -1,4 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+#topnav {
+    width: 100%;
+    display: flex;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: 0;
+	justify-content: space-between;
+	z-index: 11000;
+}
+
+#topnav ul li { 
+	display: inline-block;
+	list-style:none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+nav a {
+    color: white;
+    font-size: 15px;
+	text-decoration: none;
+	padding-left: 20px;
+}
+
+nav a:hover {
+  	color: #A8A1A6;
+}
+
+nav a.active {
+  	color: #D73229;
+}
+
+.topnav-left {
+  	float: left;
+	margin-left: -20px;
+}
+
+.topnav-right {
+  	float: right;
+	margin-right: 50px;
+}
+
+.logo-image {
+	height: 16px;
+}
+
+/* Setting up the footer. */
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+	padding-top: 120px;
+	padding-bottom: 60px;
+	font-size: 12px;
+	background-color: #111111;
+	display: grid;
+  	grid-template-columns: 32fr 12fr 12fr 12fr 32fr;
+	grid-row-gap: 60px;
+	align-items: center;
+}
+
+footer a {
+	color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 10px;
+	font-size: 18px;
+    }
+
+.icon-images {
+	max-height: 30px;
+}
+
+.footer-column1 {
+  	grid-column: 1;
+  	grid-row: 1;
+}
+
+img.footer-column1 {
+	max-width: 40%;
+	display: block;
+    margin: 0 auto;
+}
+
+.footer-column2 {
+  	grid-column: 2;
+  	grid-row: 1;
+	display: block;
+	text-align: left;
+}
+
+.footer-column2 a {
+    display: block;
+    margin-bottom: 5px;
+	font-size: 14px;
+}
+
+.footer-column3 {
+  	grid-column: 3;
+  	grid-row: 1;
+	display: block;
+	text-align: left;
+}
+
+.footer-column3 a {
+    display: block;
+    margin-bottom: 5px;
+	font-size: 14px;
+}
+
+.footer-column4 {
+  	grid-column: 4;
+  	grid-row: 1;
+	display: block;
+	text-align: left;
+}
+
+.footer-column4 a {
+    display: block;
+    margin-bottom: 5px;
+	font-size: 14px;
+}
+
+.footer-column5 {
+  	grid-column: 5;
+  	grid-row: 1;
+}
+
+.footer-bottom{
+  	grid-column: 1/6;
+  	grid-row: 2;
+}
+
+/* Account Page CSS */
 
 * {
     margin: 0;
@@ -12,6 +146,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+	background-image: url(../img/campfire.png);
     background-size: cover;
     background-position: center;
 }
@@ -82,20 +217,20 @@ header {
     color: #162938;
 }
 
+
 .wrapper {
     position: relative;
     width: 400px;
     height: 440px;
     background: transparent;
+	-webkit-backdrop-filter: blur(20px);
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
-    backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transform: scale(0);
     transition: transform .5s ease, height .2s ease;
 }
 
@@ -139,7 +274,6 @@ header {
     right: 0;
     width: 45px;
     height: 45px;
-    background: #162938;
     font-size: 2em;
     color: #fff;
     display: flex;
@@ -152,7 +286,7 @@ header {
 
 .form-box h2 {
     font-size: 2em;
-    color: #162938;
+    color: #FFFFFF;
     text-align: center;
 }
 
@@ -160,7 +294,7 @@ header {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #162938;
+    border-bottom: 2px solid #FFFFFF;
     margin: 30px 0;
 }
 
@@ -170,7 +304,7 @@ header {
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #162938;
+    color: #FFFFFF;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -188,7 +322,7 @@ header {
     border: none;
     outline: none;
     font-size: 1em;
-    color: #162938;
+    color: #FFFFFF;
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -197,13 +331,13 @@ header {
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #162938;
+    color: #FFFFFF;
     line-height: 57px;
 }
 
 .remember-forgot {
     font-size: .9em;
-    color: #162938;
+    color: #FFFFFF;
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -211,12 +345,12 @@ header {
 }
 
 .remember-forgot label input {
-    accent-color: #162938;
+    accent-color: #ffffff;
     margin-right: 3px;
 }
 
 .remember-forgot a {
-    color: #162938;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -227,26 +361,131 @@ header {
 .btn {
     width: 100%;
     height: 45px;
-    background: #162938;
+    background: #fff;
     border: none;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1em;
-    color: #fff;
+    color: #000;
     font-weight: 500;
 }
 
 .login-register {
     font-size: .9em;
-    color: #162938;
+    color: #fff;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 
 .login-register p a {
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #ffffff;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    line-height: 57px;
+}
+
+.remember-forgot {
+    font-size: .9em;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: #ffffff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
     color: #162938;
+    font-weight: 500;
+}
+
+.login-register {
+    font-size: .9em;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color: #ffffff;
     text-decoration: none;
     font-weight: 600;
 }
