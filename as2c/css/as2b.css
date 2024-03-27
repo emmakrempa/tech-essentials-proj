@@ -17,7 +17,6 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
 /* CSS for the full navigation bar.*/
 
 header {
@@ -503,13 +502,14 @@ img.footer-column1 {
 }
 
 .carousel-item img:hover {
-  	transform: scale(1.07);
+	transform: scale(1.07);
 }
 
 .carousel-item img {
   	width: 100%;
   	height: auto;
 	padding-bottom: 20px;
+	
 }
 
 .carousel-item2 {
@@ -1263,10 +1263,14 @@ cursor: none;
 
 #popup #closepopup:hover {
 	cursor: pointer;
+<<<<<<< HEAD
 	font-family: 'Barriecito';
 }
 
 
+=======
+}
+>>>>>>> a7c839c2c1bc311800d0452889f334396b267f4e
 @media (max-width:760px) {
 	
 	.carousel-item {
