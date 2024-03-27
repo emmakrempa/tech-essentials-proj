@@ -1150,7 +1150,6 @@ cursor: none;
 }
 
 .post{
-<<<<<<< HEAD
 	margin-left: 20px;
 }
 
@@ -1195,8 +1194,6 @@ cursor: none;
 
 .post{
 	margin-left: 20px;
-	margin-left: ;
-	padding-bottom: ;
 }
 
 .posttitle{
@@ -1260,14 +1257,12 @@ cursor: none;
 	width: 50px;
 	height: 50px;
 	text-align: center;
-	linge-hewight: 64px;
+	line-height: 64px;
 	font-size: 70px;
 }
 
 #popup #closepopup:hover {
 	cursor: pointer;
-}
- 
 	font-family: 'Barriecito';
 }
 
