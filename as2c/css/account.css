@@ -1,3 +1,26 @@
+
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* This CSS applies to the entire site. */
+
+* {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 200;
+	color: white;
+	max-width: 100%;
+}
+
+body {
+	background-image: url(../img/campfire.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+/* CSS for the full navigation bar.*/
+
 #topnav {
     width: 100%;
     display: flex;
@@ -23,7 +46,7 @@ nav a {
 }
 
 nav a:hover {
-  	color: #A8A1A6;
+  	color: #d;
 }
 
 nav a.active {
@@ -44,122 +67,16 @@ nav a.active {
 	height: 16px;
 }
 
-/* Setting up the footer. */
-
-footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-	padding-top: 120px;
-	padding-bottom: 60px;
-	font-size: 12px;
-	background-color: #111111;
-	display: grid;
-  	grid-template-columns: 32fr 12fr 12fr 12fr 32fr;
-	grid-row-gap: 60px;
-	align-items: center;
-}
-
-footer a {
-	color: #FFFFFF;
-    text-decoration: none;
-    margin: 0 10px;
-	font-size: 18px;
-    }
-
-.icon-images {
-	max-height: 30px;
-}
-
-.footer-column1 {
-  	grid-column: 1;
-  	grid-row: 1;
-}
-
-img.footer-column1 {
-	max-width: 40%;
-	display: block;
-    margin: 0 auto;
-}
-
-.footer-column2 {
-  	grid-column: 2;
-  	grid-row: 1;
-	display: block;
-	text-align: left;
-}
-
-.footer-column2 a {
-    display: block;
-    margin-bottom: 5px;
-	font-size: 14px;
-}
-
-.footer-column3 {
-  	grid-column: 3;
-  	grid-row: 1;
-	display: block;
-	text-align: left;
-}
-
-.footer-column3 a {
-    display: block;
-    margin-bottom: 5px;
-	font-size: 14px;
-}
-
-.footer-column4 {
-  	grid-column: 4;
-  	grid-row: 1;
-	display: block;
-	text-align: left;
-}
-
-.footer-column4 a {
-    display: block;
-    margin-bottom: 5px;
-	font-size: 14px;
-}
-
-.footer-column5 {
-  	grid-column: 5;
-  	grid-row: 1;
-}
-
-.footer-bottom{
-  	grid-column: 1/6;
-  	grid-row: 2;
-}
-
-/* Account Page CSS */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-	background-image: url(../img/campfire.png);
-    background-size: cover;
-    background-position: center;
-}
-
 header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+	background-color: black;
     z-index: 99;
 }
 
@@ -176,6 +93,10 @@ header {
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
+}
+
+.navigation a:hover {
+	color: #D73229;
 }
 
 .navigation a::after {
@@ -213,10 +134,12 @@ header {
 }
 
 .navigation .btnLogin-popup:hover {
-    background: #fff;
-    color: #162938;
+    background: #D73229;
+    color: #ffff;
 }
 
+
+/* css for the login popup */
 
 .wrapper {
     position: relative;
@@ -229,9 +152,11 @@ backdrop-filter: blur(20px);
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
+    margin: 180px auto;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    transform: scale(1);
     transition: transform .5s ease, height .2s ease;
 }
 
