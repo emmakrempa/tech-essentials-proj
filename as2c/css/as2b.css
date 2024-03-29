@@ -769,9 +769,14 @@ img.row-five-2a {
   	grid-row: 5;
 	display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 	justify-content: center;
 	margin-right: 40px;
+	text-align: left;
+}
+
+.row-five-2b a {
+  	text-decoration: none;
 }
 
 .row-six-2a {
@@ -795,9 +800,14 @@ img.row-six-2a {
   	grid-row: 6;
 	display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 	justify-content: center;
 	margin-right: 40px;
+	text-align: left;
+}
+
+.row-six-2b a {
+  	text-decoration: none;
 }
 
 .row-seven-2a {
@@ -821,9 +831,14 @@ img.row-seven-2a {
   	grid-row: 7;
 	display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 	justify-content: center;
 	margin-right: 40px;
+	text-align: left;
+}
+
+.row-seven-2b a {
+  	text-decoration: none;
 }
 
 .row-eight-2a {
@@ -847,9 +862,14 @@ img.row-eight-2a {
   	grid-row: 8;
 	display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 	justify-content: center;
 	margin-right: 40px;
+	text-align: left;
+}
+
+.row-eight-2b a {
+  	text-decoration: none;
 }
 
 .row-nine-2a {
@@ -873,9 +893,14 @@ img.row-nine-2a {
   	grid-row: 9;
 	display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 	justify-content: center;
 	margin-right: 40px;
+	text-align: left;
+}
+
+.row-nine-2b a {
+  	text-decoration: none;
 }
 
 .row-ten-2a {
@@ -899,9 +924,14 @@ img.row-ten-2a {
   	grid-row: 10;
 	display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 	justify-content: center;
 	margin-right: 40px;
+	text-align: left;
+}
+
+.row-ten-2b a {
+  	text-decoration: none;
 }
 
 .row-eleven-2a {
@@ -925,9 +955,14 @@ img.row-eleven-2a {
   	grid-row: 11;
 	display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 	justify-content: center;
 	margin-right: 40px;
+	text-align: left;
+}
+
+.row-eleven-2b a {
+  	text-decoration: none;
 }
 
 .row-twelve-2a {
@@ -951,9 +986,14 @@ img.row-twelve-2a {
   	grid-row: 12;
 	display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 	justify-content: center;
 	margin-right: 40px;
+	text-align: left;
+}
+
+.row-twelve-2b a {
+  	text-decoration: none;
 }
 
 .row-thirteen-2a {
@@ -977,9 +1017,14 @@ img.row-thirteen-2a {
   	grid-row: 13;
 	display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 	justify-content: center;
 	margin-right: 40px;
+	text-align: left;
+}
+
+.row-thirteen-2b a {
+  	text-decoration: none;
 }
 
 .row-fourteen {
