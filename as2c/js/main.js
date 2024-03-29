@@ -67,6 +67,7 @@ initializeCarousel('nextButton9', '.row-four-3', 'carousel-item');
 initializeCarousel('nextButton10', '.row-four-3', 'carousel-item');
 initializeCarousel('nextButton11', '.row-four-3', 'carousel-item');
 initializeCarousel('nextButton12', '.row-four-3', 'carousel-item');
+initializeCarousel('nextButton14', '.row-three-4', 'carousel-item');
 	
 	
 // Custom cursor
