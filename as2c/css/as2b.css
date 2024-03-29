@@ -1385,9 +1385,6 @@ cursor: none;
 }
 
 
-=======
-}
->>>>>>> a7c839c2c1bc311800d0452889f334396b267f4e
 @media (max-width:760px) {
 	
 	.carousel-item {
@@ -1398,7 +1395,6 @@ cursor: none;
 	
 	.carousel-item2 {
   		flex: 0 0 calc(100% / 3);
-/* Community page style END*/
   		max-width: calc(100% / 3);
 	}
 	
