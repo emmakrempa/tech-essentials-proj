@@ -81,9 +81,29 @@ initializeCarousel('nextButton14', '.row-three-4', 'carousel-item');
         });
     });
 });
+	
+// Fire Transformation - Coming Soon
+	
+window.onload = function() {
+    playImageTransition();
+};
 
+function playImageTransition() {
+    var images = document.querySelectorAll('#image-container img');
+    var currentImageIndex = 0;
+    var interval = setInterval(function() {
+        images[currentImageIndex].classList.add('fade-out');
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        images[currentImageIndex].classList.remove('fade-out');
+        images[currentImageIndex].style.opacity = 1; 
+        if (currentImageIndex === images.length - 1) {
+            clearInterval(interval);
+        }
+    }, 300);
+}
 	
 // Community popup
+	
 $(document).ready(function(){
 $("#popup").hide()});
 
