@@ -100,6 +100,23 @@ function playImageTransition() {
 
 playImageTransition();
 	
+// Hamburger Menu //
+	
+	$("#menu").hide();
+	$("#burger").click(function() {
+		$("#menu").slideToggle("fast");
+	});
+	
+	$(document).click(function() {
+		$("#menu").slideUp("fast");
+		
+	});
+	
+	$("#burger").click(function(e) {
+		e.stopPropagation();
+		return false;
+	});
+	
 // Community popup
 	
 $(document).ready(function(){
