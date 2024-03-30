@@ -84,10 +84,6 @@ initializeCarousel('nextButton14', '.row-three-4', 'carousel-item');
 	
 // Fire Transformation - Coming Soon
 	
-window.onload = function() {
-    playImageTransition();
-};
-
 function playImageTransition() {
     var images = document.querySelectorAll('#image-container img');
     var currentImageIndex = 0;
@@ -101,6 +97,8 @@ function playImageTransition() {
         }
     }, 300);
 }
+
+playImageTransition();
 	
 // Community popup
 	
