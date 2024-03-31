@@ -1,4 +1,28 @@
 // JavaScript Document
+document.addEventListener('DOMContentLoaded', function() {
+    const wrapper = document.querySelector('.wrapper');
+const loginLink = document.querySelector('.login-link');
+const registerLink = document.querySelector('.register-link');
+const btnPopup = document.querySelector('.btnLogin-popup');
+const iconClose = document.querySelector('.icon-close');
+
+registerLink.addEventListener('click', ()=> {
+    wrapper.classList.add('active');
+});
+
+loginLink.addEventListener('click', ()=> {
+    wrapper.classList.remove('active');
+});
+
+btnPopup.addEventListener('click', ()=> {
+    wrapper.classList.add('active-popup');
+});
+
+iconClose.addEventListener('click', ()=> {
+    wrapper.classList.remove('active-popup');
+    wrapper.classList.remove('active');
+});
+});
 
 $(function(){
 
@@ -30,6 +54,7 @@ function initializeCarousel(buttonId, carouselSelector, itemClass) {
     }
 }
 
+
 initializeCarousel('nextButton1', '.row-two', 'carousel-item');
 initializeCarousel('nextButton2', '.row-three', 'carousel-item2');
 initializeCarousel('nextButton3', '.row-five', 'carousel-item');
@@ -42,6 +67,7 @@ initializeCarousel('nextButton9', '.row-four-3', 'carousel-item');
 initializeCarousel('nextButton10', '.row-four-3', 'carousel-item');
 initializeCarousel('nextButton11', '.row-four-3', 'carousel-item');
 initializeCarousel('nextButton12', '.row-four-3', 'carousel-item');
+initializeCarousel('nextButton14', '.row-three-4', 'carousel-item');
 	
 	
 // Custom cursor
@@ -55,9 +81,44 @@ initializeCarousel('nextButton12', '.row-four-3', 'carousel-item');
         });
     });
 });
+	
+// Fire Transformation - Coming Soon
+	
+function playImageTransition() {
+    var images = document.querySelectorAll('#image-container img');
+    var currentImageIndex = 0;
+    var interval = setInterval(function() {
+        images[currentImageIndex].classList.add('fade-out');
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        images[currentImageIndex].classList.remove('fade-out');
+        images[currentImageIndex].style.opacity = 1; 
+        if (currentImageIndex === images.length - 1) {
+            clearInterval(interval);
+        }
+    }, 300);
+}
 
+playImageTransition();
+	
+// Hamburger Menu //
+	
+	$("#menu").hide();
+	$("#burger").click(function() {
+		$("#menu").slideToggle("fast");
+	});
+	
+	$(document).click(function() {
+		$("#menu").slideUp("fast");
+		
+	});
+	
+	$("#burger").click(function(e) {
+		e.stopPropagation();
+		return false;
+	});
 	
 // Community popup
+	
 $(document).ready(function(){
 $("#popup").hide()});
 

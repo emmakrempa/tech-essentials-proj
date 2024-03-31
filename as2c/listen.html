@@ -19,38 +19,49 @@
 <body>
 	
 	<!-- This section sets up our nav bar with 'HOME' on the left and the others on the right. -->
+	
+	<nav id="hamburger_wrapper">
+		<div id="burger">&#9776;</div>
+		<div id="menu"> 
+			<div><a href="index.html">HOME</a></div>
+			<div><a href="read.html">READ</a></div>
+			<div><a href="watch.html">WATCH</a></div>
+    		<div><a href="listen.html" class="active">LISTEN</a></div>
+			<div><a href="communities.html">COMMUNITIES</a></div>
+			<div><a href="comingsoon.html">ACCOUNT</a></div>
+		</div>
+	</nav>
 
-	<nav id="topnav">
+    <nav id="topnav">
 		
     	<ul class="topnav-left">
         	<li><a href="index.html"><img src="img/logo.png" class="logo-image"></a></li>
    		</ul>
-		
-    	<ul class="topnav-right">
+		<ul class="topnav-right">
             <li><a href="read.html">READ</a></li>
             <li><a href="watch.html">WATCH</a></li>
             <li><a href="listen.html" class="active">LISTEN</a></li>
         	<li><a href="communities.html">COMMUNITIES</a></li>
-        	<li><a href="account.html">ACCOUNT</a></li>
+        	<li><button class="btnLogin-popup">LOGIN</button></li>
     	</ul>
 		
 	</nav>
 	
 	<!-- This section is where our grid starts. -->
 	
-	<div class="grid-system">
+	<main class="grid-system-2">
 		
-		<!-- Listen Image -->
+		<!-- Header Image -->
 		
-		<div class="row-one">
+		<div class="row-one-2">
 			
 			<img src="img/listenlogo.png" class="row-one"/>
 		
 		</div>
+	
+	<!-- Read Carousel - Most Recent-->
 		
-		<!-- Listen Carousel - Most Recent -->
-		
-		<div class="row-two">
+		<section class="row-two-2">
 			
 			<div class="text1">Most Recent</div>
 			
@@ -58,62 +69,73 @@
 			
 				<div class="carousel">
   					<div class="carousel-inner">
-    					<div class="carousel-item"><img src="img/listenmostrecent1.png"/>Stranger Things</div>
-    					<div class="carousel-item"><img src="img/listenmostrecent2.png"/>The Last of Us Pod</div>
-						<div class="carousel-item"><img src="img/listenmostrecent3.png"/>Hunting the Great Bear</div>
+						<div class="carousel-item"><a href="listenmostrecentvid1.html"><img src="img/listenmostrecent1.png"/>Stranger Things Podcast</a></div>
+						<div class="carousel-item"><a href="comingsoon.html"><img src="img/listenmostrecent2.png"/>The Last of Us Podcast</a></div>
+						<div class="carousel-item"><a href="comingsoon.html"><img src="img/listenmostrecent3.png"/>Hunting the Great Bear</a></div>
+						<div class="carousel-item"><a href="comingsoon.html"><img src="img/listenmostrecent4.png"/>War of the Worlds</a></div>
+    					<div class="carousel-item"><a href="comingsoon.html"><img src="img/listenmostrecent5.png"/>Midnight Burger</a></div>
   					</div>
 				</div>
 				
-				<img class="carousel-next-icon" src="img/arrow.png" id="nextButton1">
+				<img class="carousel-next-icon" src="img/arrow.png" id="nextButton5">
 				
 			</div>
 		
-		</div>
+		</section>
+	
+	<!-- Read Carousel - Saved -->
 		
-		<!-- Listen Carousel - Saved -->
-		
-		<div class="row-three">
+		<section class="row-three-2">
 			
-			<div class="text1">Saved</div>
+			<div class="text3">Saved</div>
 			
 			<div class="carousel-container">
 			
 				<div class="carousel">
   					<div class="carousel-inner">
-    					<div class="carousel-item2"><img src="img/listensaved1.png"/>House of Dragons</div>
-    					<div class="carousel-item2"><img src="img/listensaved2.png"/>Scottish Waterhorse</div>
-						<div class="carousel-item2"><img src="img/listensaved3.png"/>Decode:Dune</div>
-						<div class="carousel-item2"><img src="img/listensaved4.png"/>The Call of the Flame</div>
-    					<div class="carousel-item2"><img src="img/listensaved5.png"/>Room For One More</div>
-    					<div class="carousel-item2"><img src="img/listensaved6.png"/>No Trespassing</div>
+    					<div class="carousel-item2-black"><a href="listensaved1.html"><img src="img/listensaved1.png"/>House of the Dragon</a></div>
+    					<div class="carousel-item2-black"><a href="comingsoon.html"><img src="img/listensaved2.png"/>Scottish Waterhorse</a></div>
+						<div class="carousel-item2-black"><a href="comingsoon.html"><img src="img/listensaved3.png"/>Decode:Dune</a></div>
+						<div class="carousel-item2-black"><a href="comingsoon.html"><img src="img/listensaved4.png"/>The Call of the Flame</a></div>
+    					<div class="carousel-item2-black"><a href="comingsoon.html"><img src="img/listensaved5.png"/>Room for One More</a></div>
+    					<div class="carousel-item2-black"><a href="comingsoon.html"><img src="img/listensaved6.png"/>No Trespassing</a></div>
+						<div class="carousel-item2-black"><a href="comingsoon.html"><img src="img/listensaved7.png"/>Cropped</a></div>
+						<div class="carousel-item2-black"><a href="comingsoon.html"><img src="img/listensaved8.png"/>Mine Your Step</a></div>
   					</div>
 				</div>
 				
-				<img class="carousel-next-icon" src="img/arrow.png" id="nextButton2">
+				<img class="carousel-next-icon" src="img/arrow-b.png" id="nextButton6">
 				
 			</div>
 		
-		</div>
+		</section>
+
+        <!-- Homepage Carousel - Podcast Genres -->
 		
-		<!-- Categories Carousel - Categories -->
-		
-		<div class="row-four">
+		<section class="row-four">
 			
 			<div class="text1">Podcast Genres</div>
 			
+			<div class="carousel-container">
+			
 				<div class="carousel">
   					<div class="carousel-inner">
-    					<div class="carousel-item2"><img src="img/listencategories1.png"/></div>
-    					<div class="carousel-item2"><img src="img/listencategories2.png"/></div>
-						<div class="carousel-item2"><img src="img/listencategories3.png"/></div>
-						<div class="carousel-item2"><img src="img/listencategories4.png"/></div>
-						<div class="carousel-item2"><img src="img/listencategories5.png"/></div>
+    					<div class="carousel-item2"><a href="fantasy_podcasts.html"><img src="img/listencategories5.png"/></a></div>
+    					<div class="carousel-item2"><a href="comingsoon.html"><img src="img/listencategories2.png"/></a></div>
+						<div class="carousel-item2"><a href="comingsoon.html"><img src="img/listencategories3.png"/></a></div>
+						<div class="carousel-item2"><a href="comingsoon.html"><img src="img/listencategories4.png"/></a></div>
+						<div class="carousel-item2"><a href="comingsoon.html"><img src="img/listencategories1.png"/></a></div>
   					</div>
+					
 				</div>
+					
+					<img class="carousel-next-icon" src="img/arrow.png" id="nextButton13">
+				
+			</div>
 		
-		</div>
-	
-		<!-- Trending Carousel - Trending -->
+		</section>
+						
+        <!-- Trending Carousel - Trending -->
 		
 		<div class="row-five">
 			
@@ -123,12 +145,12 @@
 			
 				<div class="carousel">
   					<div class="carousel-inner">
-						<div class="carousel-item active"><img src="img/listentrending3.png"/>World's Beyond Number</div>
-						<div class="carousel-item"><img src="img/listentrending5.png"/>Stories from the Hearth</div>
-    					<div class="carousel-item"><img src="img/listentrending1.png"/>Dreamful</div>
-    					<div class="carousel-item"><img src="img/listentrending2.png"/>Abstract Adventures</div>
-						<div class="carousel-item active"><img src="img/listentrending4.png"/>The Inn Between</div>
-    					<div class="carousel-item"><img src="img/listentrending6.png"/>The Lamp-post Listener</div>
+						<div class="carousel-item active"><a href="listentrending1.html"><img src="img/listentrending3.png"/>Worlds Beyond Number</a></div>
+						<div class="carousel-item"><a href="comingsoon.html"><img src="img/listentrending5.png"/>Stories from the Hearth</a></div>
+    					<div class="carousel-item"><a href="comingsoon.html"><img src="img/listentrending1.png"/>Dreamful</a></div>
+    					<div class="carousel-item"><a href="comingsoon.html"><img src="img/listentrending2.png"/>Abstract Adventures</a></div>
+						<div class="carousel-item active"><a href="comingsoon.html"><img src="img/listentrending4.png"/>The Inn Between</a></div>
+    					<div class="carousel-item"><a href="comingsoon.html"><img src="img/listentrending6.png"/>The Lamp-post Listener</a></div>
   					</div>
 				</div>
 			
@@ -148,12 +170,12 @@
 			
 				<div class="carousel">
   					<div class="carousel-inner">
-    					<div class="carousel-item"><img src="img/listencommunity1.png"/>DERELICT FATHOM</div>
-    					<div class="carousel-item"><img src="img/listencommunity2.png"/>Campfire Stories</div>
-						<div class="carousel-item active"><img src="img/listencommunity3.png"/>Midnight Burger</div>
-						<div class="carousel-item active"><img src="img/listencommunity4.png"/>The Elixir of Life</div>
-    					<div class="carousel-item"><img src="img/listencommunity5.png"/>The Strange Case of Starship Iris</div>
-    					<div class="carousel-item"><img src="img/listencommunity6.png"/>PotterCast</div>
+    					<div class="carousel-item"><a href="listencommunity1.html"><img src="img/listencommunity1.png"/>DERELICT FATHOM</a></div>
+    					<div class="carousel-item"><a href="comingsoon.html"><img src="img/listencommunity2.png"/>Campfire Stories</a></div>
+						<div class="carousel-item active"><a href="comingsoon.html"><img src="img/listencommunity3.png"/>Midnight Burger</a></div>
+						<div class="carousel-item active"><a href="comingsoon.html"><img src="img/listencommunity4.png"/>The Elixir of Life</a></div>
+    					<div class="carousel-item"><a href="comingsoon.html"><img src="img/listencommunity5.png"/>The Strange Case of Starship Iris</a></div>
+    					<div class="carousel-item"><a href="comingsoon.html"><img src="img/listencommunity6.png"/>PotterCast</a></div>
   					</div>
 				</div>
 			
@@ -164,6 +186,8 @@
 		</div>
 			
 	</div>
+	
+	</main>
 	
 	<footer>
 		
@@ -194,7 +218,7 @@
 		<div class="footer-bottom">© 2024 by Tech Essentials Team 2</div>
 			
 	</footer>
-		
+	
 	<div class="cursor">&#9733;</div>
 	
 </body>
