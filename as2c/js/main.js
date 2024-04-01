@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const loginLink = document.querySelector('.login-link');
     const registerLink = document.querySelector('.register-link');
     const btnPopup = document.querySelector('.btnLogin-popup');
+	const btnPopup2 = document.querySelector('.btnLogin-popup-2'); 
     const iconClose = document.querySelector('.icon-close');
 
     registerLink.addEventListener('click', () => {
@@ -15,6 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     btnPopup.addEventListener('click', () => {
+        wrapper.classList.add('active-popup');
+    });
+	
+	btnPopup2.addEventListener('click', () => {
         wrapper.classList.add('active-popup');
     });
 

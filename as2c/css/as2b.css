@@ -120,6 +120,24 @@ nav a.active {
     color: #ffff;
 }
 
+.btnLogin-popup-2 {
+    width: 60px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    margin-left: 20px;
+    transition: .5s;
+}
+
+.btnLogin-popup-2:hover {
+    background: #D73229;
+    color: #ffff;
+}
+
 /* Setting up the footer. */
 
 footer {
@@ -738,7 +756,6 @@ img.row-one {
 .login-register p a:hover {
     text-decoration: underline;
 }
-
 
 /* Grid layout for read, watch subpages. */
 
@@ -1706,6 +1723,13 @@ cursor: none;
 		font-size: 14px;
 	}
 	
+	.wrapper {
+    width: 300px; 
+    height: auto;
+    max-height: 440px;
+	margin-left: -150px;
+	}
+	
 }
 	
 @media ( max-width:480px){
@@ -1797,6 +1821,13 @@ cursor: none;
 	
 	.footer-column1 img, .footer-column1, .footer-column5 {
     display: none;
+	}
+	
+	.wrapper {
+    width: 300px; 
+    height: auto;
+    max-height: 400px;
+	margin-left: -150px;
 	}
 	
 }
