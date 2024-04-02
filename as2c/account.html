@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M0N4FHTHPV"></script>
+	<script>
+ 	 window.dataLayer = window.dataLayer || [];
+ 	 function gtag(){dataLayer.push(arguments);}
+ 	 gtag('js', new Date());
+  	gtag('config', 'G-M0N4FHTHPV');
+	</script>
+		
+	<meta charset="UTF8" />
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
+	<title>Campfire Profile Page</title>
+	<link rel="stylesheet" type="text/css" href="css/as2b.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya Sans">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barriecito">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+			<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+			<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+			<script src="js/jquery-3.7.1.min.js"></script>
+			<script src="js/main.js"></script>
+</head>
+<body>
+
+    <!-- This section sets up our nav bar with 'HOME' on the left and the others on the right. -->
+	
+	<nav id="hamburger_wrapper">
+		<div id="burger">&#9776;</div>
+		<div id="menu"> 
+			<div><a href="index.html" class="active">HOME</a></div>
+			<div><a href="read.html">READ</a></div>
+			<div><a href="watch.html">WATCH</a></div>
+    		<div><a href="listen.html">LISTEN</a></div>
+			<div><a href="communities.html">COMMUNITIES</a></div>
+			<div><button class="btnLogin-popup-2">LOGIN</button></div>
+		</div>
+	</nav>
+
+    <nav id="topnav">
+		
+    	<ul class="topnav-left">
+        	<li><a href="index.html"><img src="img/logo.png" class="logo-image"></a></li>
+   		</ul>
+		<ul class="topnav-right">
+            <li><a href="read.html">READ</a></li>
+            <li><a href="watch.html">WATCH</a></li>
+            <li><a href="listen.html">LISTEN</a></li>
+        	<li><a href="communities.html">COMMUNITIES</a></li>
+        	<li><button class="btnLogin-popup">LOGIN</button></li>
+    	</ul>
+		
+	</nav>
+
+    <main class="profile-page">
+    <div class="avatar-profile-container">
+        <div class="profile-picture-container">
+            <img src="img/userplaceholder.png" alt="Profile Picture" id="profile-picture">
+            <label for="profile-pic-upload" class="choose-profile-pic">Choose Profile Pic</label>
+            <input type="file" id="profile-pic-upload" accept="image/*" style="display: none;">
+            <label for="avatar-pic-upload" class="choose-avatar-btn">Choose Avatar</label>
+
+        </div>
+    
+    <div class="avatar-modal">
+        <div class="avatar-options">
+            <img src="img/wizard.png" alt="Avatar 1" class="avatar-option">
+            <img src="img/gremlin.png" alt="Avatar 2" class="avatar-option">
+            <img src="img/sifi.png" alt="Avatar 3" class="avatar-option">
+            <img src="img/prince.png" alt="Avatar 1" class="avatar-option">
+            <img src="img/hunter.png" alt="Avatar 2" class="avatar-option">
+            <img src="img/priestess.png" alt="Avatar 3" class="avatar-option">
+            <img src="img/knight.png" alt="Avatar 3" class="avatar-option">
+    
+        </div>
+        <button class="close-modal-btn">Close</button>
+    </div></div>
+
+    <section class = "profile-info">
+        <div class="text1">Carmen Swimley</div>
+            <h2>@sheloveswriting</h2>
+        <div class="profile-details">
+            <p><strong>Followers:</strong> 1000</p>
+            <p><strong>Following:</strong> 500</p>
+            <p><strong>Joined:</strong> January 2020</p>
+        </div>
+        <div class="text1">Bio</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tempor risus. Vestibulum ac metus ultricies, lobortis est vel, congue turpis. Morbi viverra consequat purus eget tristique. Nam ac velit quis justo ullamcorper accumsan a at quam.</p>
+        </div>
+        </section>
+        
+        <section class="row-two-2">
+			
+			<div class="text1">Published Stories</div>
+			
+			<div class="carousel-container">
+			
+				<div class="carousel">
+  					<div class="carousel-inner">
+						<div class="carousel-item"><a href="violet-rain.html"><img src="img/read6.png"/>Violet Rain</a></div>
+						<div class="carousel-item"><a href="substitution.html"><img src="img/read4.png"/>Substitution</a></div>
+						<div class="carousel-item"><a href="the-awakening.html"><img src="img/read3.png"/>The Awakening</a></div>
+				        <div class="carousel-item"><a href="welcome-adam.html"><img src="img/read5.png"/>Welcome Adam</a></div>
+				    </div>
+				</div>
+				
+				<img class="carousel-next-icon" src="img/arrow.png" id="nextButton5">
+				
+			</div>
+		
+		</section>
+	
+        <div class="activity-feed">
+            <h3 class="section-title">Activity Feed:</h3>
+            <ul>
+                <li>Commented on <a href="#">Story Title 1</a></li>
+                <li>Liked <a href="#">Story Title 2</a></li>
+                <li>Started reading <a href="#">Story Title 3</a></li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+    </div>
+</main>
+	<footer>
+		
+		<div class="footer-column1">
+		<img src="img/logo.png" class="footer-column1">
+		</div>
+		
+		<p class="footer-column2">
+			<span class="text2">About</span>
+			<a href="comingsoon.html">Address</a>
+			<a href="comingsoon.html">Contact</a>
+		</p>
+		
+		<p class="footer-column3">
+			<span class="text2">Help</span>
+			<a href="comingsoon.html">FAQs</a>
+			<a href="comingsoon.html">Accessibility</a>
+		</p>
+		
+		<p class="footer-column4">
+			<span class="text2">Policies</span>
+			<a href="comingsoon.html">Privacy Terms</a>
+			<a href="comingsoon.html">Cookies</a>
+		</p>
+		
+		<p class="footer-column5"><a href="" target="_blank"><img src="img/instagram.png" class="icon-images"></a>
+		<a href="" target="_blank"><img src="img/twitter.png" class="icon-images"></a>
+		<a href="" target="_blank"><img src="img/youtube.png" class="icon-images"></a></p>
+	
+		<div class="footer-bottom">© 2024 by Tech Essentials Team 2</div>
+			
+	</footer>
+		
+	<div class="cursor">&#9733;</div>
+
+</body>
+</html>

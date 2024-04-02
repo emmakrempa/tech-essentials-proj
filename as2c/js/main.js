@@ -1,4 +1,56 @@
 // JavaScript Document
+
+// Choose Profile Pic or Avatar //
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const chooseProfilePicLabel = document.querySelector('.choose-profile-pic');
+    const profilePicUploadInput = document.querySelector('#profile-pic-upload');
+    const profilePicture = document.querySelector('#profile-picture');
+
+    chooseProfilePicLabel.addEventListener('click', function() {
+        profilePicUploadInput.click();
+    });
+
+    profilePicUploadInput.addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function() {
+                profilePicture.src = reader.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const chooseProfilePicLabel = document.querySelector('.choose-avatar-btn'); // Updated selector
+    const avatarModal = document.querySelector('.avatar-modal');
+    const closeModalBtn = document.querySelector('.close-modal-btn');
+    const avatarOptions = document.querySelectorAll('.avatar-option');
+    const profilePicture = document.querySelector('#profile-picture');
+    
+    chooseProfilePicLabel.addEventListener('click', function() { // Updated event listener
+        avatarModal.style.display = 'flex';
+    });
+    
+    closeModalBtn.addEventListener('click', function() {
+        avatarModal.style.display = 'none';
+    });
+
+    avatarOptions.forEach(function(avatar) {
+        avatar.addEventListener('click', function() {
+            profilePicture.src = this.src;
+            avatarModal.style.display = 'none';
+        });
+    });
+});
+
+
+// Account Registration //
+
 document.addEventListener('DOMContentLoaded', function() {
     const wrapper = document.querySelector('.wrapper');
     const loginLink = document.querySelector('.login-link');
@@ -91,6 +143,8 @@ initializeCarousel('nextButton19', '.row-four', 'carousel-item');
     });
 });
 	
+
+
 // Fire Transformation - Coming Soon
 	
 function playImageTransition() {
