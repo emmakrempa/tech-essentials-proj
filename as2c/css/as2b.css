@@ -352,7 +352,7 @@ img.footer-column1 {
 	transform: translateX(-50%);
 	animation: flicker 0.4s infinite alternate;
 	z-index: 2;
-	background: linear-gradient(to top, rgba(215, 50, 41, 0.12), rgba(255, 87, 34, 0));
+	background: linear-gradient(to top, rgba(215, 50, 41, 0.1), rgba(255, 87, 34, 0));
 }
 
 .next-arrow {
