@@ -75,7 +75,9 @@ initializeCarousel('nextButton12', '.row-four-3', 'carousel-item');
 initializeCarousel('nextButton14', '.row-three-4', 'carousel-item');
 initializeCarousel('nextButton15', '.row-three', 'carousel-item');
 initializeCarousel('nextButton16', '.row-four', 'carousel-item');
-	
+initializeCarousel('nextButton17', '.row-two', 'carousel-item');	
+initializeCarousel('nextButton18', '.row-three', 'carousel-item');	
+initializeCarousel('nextButton19', '.row-four', 'carousel-item');
 	
 // Custom cursor
 	$(document).ready(function(){

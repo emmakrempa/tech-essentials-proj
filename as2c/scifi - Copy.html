@@ -1,0 +1,250 @@
+<!doctype html>
+
+<html lang="en">
+	
+<head>
+		
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M0N4FHTHPV"></script>
+	<script>
+ 	 window.dataLayer = window.dataLayer || [];
+ 	 function gtag(){dataLayer.push(arguments);}
+ 	 gtag('js', new Date());
+  	gtag('config', 'G-M0N4FHTHPV');
+	</script>
+		
+	<meta charset="UTF8" />
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
+	<title>Campfire</title>
+	<link rel="stylesheet" type="text/css" href="css/as2b.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya Sans">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barriecito">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+			<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+			<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+			<script src="js/jquery-3.7.1.min.js"></script>
+			<script src="js/main.js"></script>
+	
+</head>
+	
+<body>
+	
+	<!-- This section sets up our nav bar with 'HOME' on the left and the others on the right. -->
+
+	<nav id="hamburger_wrapper">
+		<div id="burger">&#9776;</div>
+		<div id="menu"> 
+			<div><a href="index.html" class="active">HOME</a></div>
+			<div><a href="read.html">READ</a></div>
+			<div><a href="watch.html">WATCH</a></div>
+    		<div><a href="listen.html">LISTEN</a></div>
+			<div><a href="communities.html">COMMUNITIES</a></div>
+			<div><button class="btnLogin-popup-2">LOGIN</button></div>
+		</div>
+	</nav>
+	
+	<!-- This section is where our grid starts. -->
+	
+	<main class="grid-system">
+		
+		<div class="wrapper">
+				<span class="icon-close">
+					<ion-icon name="close"></ion-icon>
+				</span>
+		
+				<div class="form-box login">
+					<h2>Login</h2>
+					<form action="#">
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="mail"></ion-icon>
+							</span>
+							<input type="email" required>
+							<label>Email</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="lock-closed"></ion-icon>
+							</span>
+							<input type="password" required>
+							<label>Password</label>
+						</div>
+						<div class="remember-forgot">
+							<label><input type="checkbox"> Remember me</label>
+							<a href="#">Forgot Password?</a>
+						</div>
+						<button type="button" class="btn" onclick="window.location.href = 'comingsoon.html';">Login</button>
+						<div class="login-register">
+							<p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+						</div>
+					</form>
+				</div>
+			
+				<div class="form-box register">
+					<h2>Registration</h2>
+					<form action="#">
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="person"></ion-icon>
+							</span>
+							<input type="text" required>
+							<label>Username</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="mail"></ion-icon>
+							</span>
+							<input type="email" required>
+							<label>Email</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="lock-closed"></ion-icon>
+							</span>
+							<input type="password" required>
+							<label>Password</label>
+						</div>
+						<div class="remember-forgot">
+							<label><input type="checkbox"> I agree to the terms & conditions</label>
+						</div>
+						<button type="button" class="btn" onclick="window.location.href = 'comingsoon.html';">Register</button>
+						<div class="login-register">
+							<p>Already have an account? <a href="#" class="login-link">Login</a></p>
+						</div>
+					</form>
+				</div>
+			</div>
+		
+		<!-- Homepage Image -->
+		
+		<div class="row-one">
+			
+		  <img src="img/scifi banner.png" class="row-one"/>
+		
+		</div>
+		
+			
+			
+		<div class="row-two">
+			
+			<div class="text1">Recent Discussions</div>
+			
+	  	  <div class="communitytype">								
+				<div><img src="img/HPP1thumbnail.png" alt="community" class="communityimg1"/> </div>
+						<div class="postdesc">
+							<div class="posttitle"> Discussion - what classes would you take? </div>
+							<div class="post"> #potions #hexesandspells #gryffindor</div>
+					  		
+								<div class="readbutton">READ</div>
+						</div>
+			
+				</div>
+		</div>
+				
+		<div class="row-three">
+			
+				
+			<div class="communitytype">								
+				<div><img src="img/HPP2thumbnail.png" alt="community" class="communityimg1"/> </div>
+						<div class="postdesc">
+							<div class="posttitle"> Historical Artifacts </div>
+					  		<div class="post"> #historyofwizards </div>
+								<div class="readbutton">READ</div>
+						</div>
+			</div>
+		</div> 
+			
+		<div class="row-four">
+						
+<div class="communitytype">								
+				<div><img src="img/HPP3thumbnail.png" alt="community" class="communityimg1"/> </div>
+						<div class="postdesc">
+							<div class="posttitle"> Wizarding World</div>
+							<div class="post"></div>
+ 							<div class="readbutton"> READ</div>
+							<div id="popup"> 
+								<div class="popuptext">
+									<div id="closepopup">&#735;</div>
+									This section is closed. You can no longer view or add comments. 
+								</div>
+							</div>
+						</div>
+				</div>
+		</div>
+	
+		<!-- Homepage Carousel - Featured -->
+		
+		<div class="row-five">
+			
+		  <div class="communitytype">								
+				<div><img src="img/HPP4thumbnail.png" alt="community" class="communityimg1"/> </div>
+						<div class="postdesc">
+							<div class="posttitle"> Do potions go bad?</div>
+					  		
+							<div class="joinbutton">READ</div>
+						</div>
+			
+				</div>
+			
+		</div>
+				
+		
+		<!-- My communities Carousel -->
+		
+		<div class="row-six">
+		
+			
+			<div class="text1">My Communities</div>
+			
+				<div class="carousel">
+  					<div class="carousel-inner">
+   						<div class="carousel-item2"><a href="harrypotter.html"><img src="img/community3.png"/> </a> </div>
+						<div class="carousel-item2"><a href="fantasy.html"> <img src="img/community1.png"/></a></div>
+						<div class="carousel-item2"><a href="scifi.html"><img src="img/community2.png"/> </a></div>
+						<div class="carousel-item2"><img src="img/community4.png"/></div>
+						<div class="carousel-item2"><img src="img/community5.png"/></div>
+  					</div>
+				</div>
+			
+		</div>
+					
+			
+			
+	</main>
+	
+	<footer>
+		
+		<div class="footer-column1">
+		<img src="img/logo.png" class="footer-column1">
+		</div>
+		
+		<p class="footer-column2">
+			<span class="text2">About</span>
+			<a href="comingsoon.html">Address</a>
+			<a href="comingsoon.html">Contact</a>
+		</p>
+		
+		<p class="footer-column3">
+			<span class="text2">Help</span>
+			<a href="comingsoon.html">FAQs</a>
+			<a href="comingsoon.html">Accessibility</a>
+		</p>
+		
+		<p class="footer-column4">
+			<span class="text2">Policies</span>
+			<a href="comingsoon.html">Privacy Terms</a>
+			<a href="comingsoon.html">Cookies</a>
+		</p>
+		
+		<p class="footer-column5"><a href="" target="_blank"><img src="img/instagram.png" class="icon-images"></a>
+		<a href="" target="_blank"><img src="img/twitter.png" class="icon-images"></a>
+		<a href="" target="_blank"><img src="img/youtube.png" class="icon-images"></a></p>
+	
+		<div class="footer-bottom">© 2024 by Tech Essentials Team 2</div>
+			
+	</footer>
+	
+	<div class="cursor">&#9733;</div>
+	
+</body>
+</html>
