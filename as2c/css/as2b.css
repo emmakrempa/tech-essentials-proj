@@ -291,6 +291,60 @@ img.footer-column1 {
 	z-index: 3;
 }
 
+.stars-sub-1 {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: twinkling .4s infinite alternate;
+	z-index: 3;
+}
+
+.stars-sub-2 {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: twinkling .9s infinite alternate;
+	z-index: 3;
+}
+
+.stars-sub-3 {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: twinkling 1.3s infinite alternate;
+	z-index: 3;
+}
+
+.stars-com-1 {
+	position: absolute;
+	top: 2%;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: twinkling .4s infinite alternate;
+	z-index: 3;
+}
+
+.stars-com-2 {
+	position: absolute;
+	top: 2%;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: twinkling .9s infinite alternate;
+	z-index: 3;
+}
+
+.stars-com-3 {
+	position: absolute;
+	top: 2%;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: twinkling 1.3s infinite alternate;
+	z-index: 3;
+}
+
 .flicker-overlay {
 	position: absolute;
 	top: 0%;
@@ -835,7 +889,18 @@ img.row-one {
 	padding-bottom: 120px;
 }
 
+.row-one-2a {
+	position: relative;
+  	grid-column: 1/3;
+  	grid-row: 1;
+}
+
+img.row-one-2a {
+	width: 100%;
+}
+
 .row-one-2 {
+	position: relative;
   	grid-column: 1/3;
   	grid-row: 1;
 	margin-bottom: -60px;
