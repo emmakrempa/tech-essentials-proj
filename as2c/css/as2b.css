@@ -350,7 +350,7 @@ img.footer-column1 {
 	top: 0%;
 	left: 50%;
 	transform: translateX(-50%);
-	animation: flicker 0.4s infinite alternate;
+	animation: flicker 0.5s infinite alternate;
 	z-index: 2;
 	background: linear-gradient(to top, rgba(215, 50, 41, 0.1), rgba(255, 87, 34, 0));
 }
@@ -1697,6 +1697,19 @@ cursor: none;
 	transform: translateX(-50%);
   	animation: flicker 0.4s infinite alternate;
 }
+
+.readbutton{
+	background: linear-gradient(to top, #ff5722, transparent);
+	background-color: #D9352C;
+	max-width: 60px;
+	max-height:40px ;
+	padding: 20px;
+	border-radius: 30px;	
+	text-align: center;
+	transform: translateX(-30%);
+  	animation: flicker 0.4s infinite alternate;
+}
+
 /* Community page style */
 
 .communitytype{
