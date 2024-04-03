@@ -1808,14 +1808,31 @@ cursor: none;
 
 /* Profile page style */
 
-
 .profile-page {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
-	background-color: #2b2a37;
-
+    position: relative; /* Ensure relative positioning */
+    max-width: 800px;
+    margin: 0 auto;
+	margin-top: 80px;;
+    padding: 20px;
+    background-color: #2b2a37;
 }
+
+.choose-background-btn {
+    position: absolute;
+    top: 20px; /* Adjust distance from the top */
+    right: 20px; /* Adjust distance from the right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    background-color: #D9352C;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 .avatar-profile-container {
     position: relative; 
     display: flex;
@@ -1980,27 +1997,16 @@ p {
 	color: #fff;
 }
 
-.profile-link {
-    display: inline-block;
-    width: 10px;
-    height: 30px; 
-	margin: 0 20px;
-    border-radius: 50%; 
-    overflow: hidden; 
-    background-color: #ccc; 
-	background-image: url("../img/userplaceholder.png");
-    background-size: cover; 
-    background-position: center;
-    text-decoration: none; 
-}
 
-.profile-image {
-    width: 10%; /* Make sure the image fills the circle */
-    height: 10%;
+
+#profile-image {
+	width: 30px;
+    height: 30px; 
+	border-radius: 50%;
+	
 }
 
 @media (max-width:760px) {
-	
 	.carousel-item {
   		flex: 0 0 calc(100%);
   		max-width: calc(100%);
@@ -2083,9 +2089,15 @@ p {
 	
 	.profile-link {
 		margin: 0;
+
+}
 }
 	
 @media ( max-width:480px){
+
+	.choose-background-btn{
+		display: none;
+	}
 	
 	.carousel-item {
   		flex: 0 0 calc(100%);

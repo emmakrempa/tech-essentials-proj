@@ -1,6 +1,72 @@
-// JavaScript Document
+// Profile background image upload //
+
+document.addEventListener('DOMContentLoaded', function() {
+    const chooseBackgroundBtn = document.querySelector('.choose-background-btn');
+    const backgroundImageUpload = document.querySelector('#background-image-upload');
+    const profilePage = document.querySelector('body');
+
+    chooseBackgroundBtn.addEventListener('click', function() {
+        backgroundImageUpload.click();
+    });
+
+    backgroundImageUpload.addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function() {
+                profilePage.style.backgroundImage = `url('${reader.result}')`;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+});
+
 
 // Choose Profile Pic or Avatar //
+document.addEventListener('DOMContentLoaded', function() {
+    const chooseProfilePicLabel = document.querySelector('.choose-avatar-btn'); 
+    const avatarModal = document.querySelector('.avatar-modal');
+    const closeModalBtn = document.querySelector('.close-modal-btn');
+    const avatarOptions = document.querySelectorAll('.avatar-option');
+    const profilePicture = document.querySelector('#profile-image');
+    
+    chooseProfilePicLabel.addEventListener('click', function() { 
+        avatarModal.style.display = 'flex';
+    });
+    
+    closeModalBtn.addEventListener('click', function() {
+        avatarModal.style.display = 'none';
+    });
+
+    avatarOptions.forEach(function(avatar) {
+        avatar.addEventListener('click', function() {
+            profilePicture.src = this.src;
+            avatarModal.style.display = 'none';
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const chooseProfilePicLabel = document.querySelector('.choose-profile-pic');
+    const profilePicUploadInput = document.querySelector('#profile-pic-upload');
+    const profilePicture = document.querySelector('#profile-image');
+
+    chooseProfilePicLabel.addEventListener('click', function() {
+        profilePicUploadInput.click();
+    });
+
+    profilePicUploadInput.addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function() {
+                profilePicture.src = reader.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+});
+
 
 
 document.addEventListener('DOMContentLoaded', function() {

@@ -34,8 +34,9 @@
 			<div><a href="watch.html">WATCH</a></div>
     		<div><a href="listen.html">LISTEN</a></div>
 			<div><a href="communities.html">COMMUNITIES</a></div>
-			<div><a href="account.html" class="profile-link">
-                <img src="img/userplaceholder.png" alt="User Profile" class="profile-image">
+			<div><a href="account.html">
+                <img src="img/userplaceholder.png" alt="User Profile" id="profile-image">
+                
             </a></div>
 		</div>
 	</nav>
@@ -51,13 +52,19 @@
             <li><a href="listen.html">LISTEN</a></li>
         	<li><a href="communities.html">COMMUNITIES</a></li>
         	<li><a href="account.html" class="profile-link">
-                <img src="img/userplaceholder.png" alt="User Profile" class="profile-image">
-            </a></div></li>
+                <img src="img/userplaceholder.png" alt="User Profile" id="profile-image">
+
+            </a></li>
     	</ul>
 		
 	</nav>
 
-    <main class="profile-page">
+    <section class="profile-page">
+
+        <!-- This section sets up the background image upload button. -->
+    <input type="file" id="background-image-upload" accept="image/*" style="display: none;">
+    <label for="background-image-upload" class="choose-background-btn">Choose Background Image</label>
+    
     <div class="avatar-profile-container">
         <div class="profile-picture-container">
             <img src="img/userplaceholder.png" alt="Profile Picture" id="profile-picture">
@@ -131,7 +138,7 @@
             <a href="#" target="_blank">Twitter</a>
             <a href="#" target="_blank">Instagram</a>
         </div>
-</main>
+        </section>
 
 	<footer>
 		
