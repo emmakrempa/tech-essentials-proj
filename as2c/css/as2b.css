@@ -421,6 +421,13 @@ img.footer-column1 {
 	margin: 0;
 }
 
+.text9 {
+	font-size: 26px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	font-family: 'Barriecito';
+	color: ;
+}
 /* Carousel(s) setup. */
 
 .carousel {
@@ -1801,6 +1808,7 @@ cursor: none;
 
 /* Profile page style */
 
+
 .profile-page {
 	max-width: 800px;
 	margin: 0 auto;
@@ -1934,8 +1942,9 @@ cursor: none;
 .bio {
 	margin-bottom: 20px;
 }
-.bio p {
+p {
 	line-height: 1.6;
+	margin: 0px;
 }
 .section-title {
 	margin-bottom: 10px;
@@ -1968,9 +1977,27 @@ cursor: none;
 .social-links a {
 	display: inline-block;
 	margin: 0 5px;
-	color: #333;
+	color: #fff;
 }
 
+.profile-link {
+    display: inline-block;
+    width: 10px;
+    height: 30px; 
+	margin: 0 20px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    background-color: #ccc; 
+	background-image: url("../img/userplaceholder.png");
+    background-size: cover; 
+    background-position: center;
+    text-decoration: none; 
+}
+
+.profile-image {
+    width: 10%; /* Make sure the image fills the circle */
+    height: 10%;
+}
 
 @media (max-width:760px) {
 	
@@ -2054,6 +2081,8 @@ cursor: none;
 	margin-left: -150px;
 	}
 	
+	.profile-link {
+		margin: 0;
 }
 	
 @media ( max-width:480px){
