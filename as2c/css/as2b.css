@@ -607,7 +607,7 @@ img.row-one {
     z-index: 20000;
     width: 400px; 
     height: 400px;
-    max-height: 440px;
+    max-height: 500px;
     background: transparent;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
@@ -632,6 +632,7 @@ img.row-one {
 
 .wrapper .form-box {
     width: 80%;
+	height: 104%;
     padding: 40px;
 }
 
